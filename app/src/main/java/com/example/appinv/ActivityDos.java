@@ -13,13 +13,25 @@ import com.an.biometric.BiometricManager;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ActivityDos extends AppCompatActivity implements BiometricCallback {
-
+    Button btnCerrar;
+    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dos);
+        mAuth= FirebaseAuth.getInstance();
 
 
+        btnCerrar= findViewById(R.id.btnCerrar);
+
+        btnCerrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                finish();
+                startActivity(new Intent(ActivityDos.this, MainActivity.class));
+            }
+        });
         new BiometricManager.BiometricBuilder(ActivityDos.this)
                 .setTitle("Logueo")
                 .setSubtitle("APP INVENTARIO")
@@ -42,6 +54,10 @@ public class ActivityDos extends AppCompatActivity implements BiometricCallback 
     public void misProductos(View view) {
         Intent misProductos = new Intent(this, MisProductos.class);
         startActivity(misProductos);
+    }
+    public void dondeNosUbicamos(View view){
+        Intent dondeNosUbicamos= new Intent(this, MapsActivity.class);
+        startActivity(dondeNosUbicamos);
     }
 
     @Override

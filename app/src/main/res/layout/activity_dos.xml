@@ -68,6 +68,13 @@
                 android:text="Sobre Nosotros" />
 
             <Button
+                android:id="@+id/mapa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="dondeNosUbicamos"
+                android:text="Donde nos ubicamos" />
+
+            <Button
                 android:id="@+id/btnCerrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

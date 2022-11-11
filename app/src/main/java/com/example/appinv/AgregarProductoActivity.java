@@ -38,9 +38,6 @@ public class AgregarProductoActivity extends AppCompatActivity {
         nombreProducto=(EditText) findViewById(R.id.eNombreProducto);
         precioProductoUnidad=(EditText) findViewById(R.id.ePrecioUnidad);
         cantidadProducto=(EditText) findViewById(R.id.eCantidad);
-
-        /*ventaProducto=(EditText) findViewById(R.id.eVentaUnidad);*/
-
         precioProductoConjunto=(EditText) findViewById(R.id.ePrecioConjunto);
         spinnertipo = (Spinner) findViewById(R.id.spinner);
         String[] opciones ={"Prioritario", "Secundario","Desechables", "Limpieza" };

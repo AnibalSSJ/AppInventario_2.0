@@ -31,7 +31,7 @@ public class MisProductos extends AppCompatActivity {
 
         FirestoreRecyclerOptions<Producto> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<Producto>().setQuery(query,Producto.class).build();
 
-        mAdapter = new ProductoAdapter(firestoreRecyclerOptions);
+        mAdapter = new ProductoAdapter(firestoreRecyclerOptions, this);
         mAdapter.notifyDataSetChanged();
         mRecycler.setAdapter(mAdapter);
     }
