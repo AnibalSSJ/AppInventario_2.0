@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.appinv.R;
 import com.example.appinv.adapter.ProductoAdapter;
 import com.example.appinv.model.Producto;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;

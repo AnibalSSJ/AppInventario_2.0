@@ -121,7 +121,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
-                    android:text="Anibal Quintana Flores"
+                    android:text="Anibal example Flores"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
